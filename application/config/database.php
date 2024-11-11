@@ -74,11 +74,11 @@ $active_group = 'default';
 $query_builder = true;
 
 $db['default'] = array(
-    'dsn'    => '',
-    'hostname' => 'localhost',
-    'username' => 'root',
-    'password' => '',
-    'database' => 'ci_sekolah',
+    'dsn'      => '',
+    'hostname' => $_ENV['DB_HOST'],
+    'username' => $_ENV['DB_USER'],
+    'password' => $_ENV['DB_PASSWORD'],
+    'database' => $_ENV['DB_NAME'],
     'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => false,
